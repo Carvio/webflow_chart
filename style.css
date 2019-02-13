@@ -1,0 +1,209 @@
+/**
+ * Global styles.
+ */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/**
+ * Webflow CSS overrides.
+ */
+canvas {
+  display: block;
+}
+
+.stack-section {
+  height: 0;
+  position: relative;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.div-block-8 {
+  height: auto;
+  background: transparent;
+}
+
+.nav-inner {
+  min-height: 100px;
+}
+
+.nav-menu-wrap {
+  display: none;
+}
+
+/**
+ * Chart styles.
+ */
+.chart-wrapper {
+  background-color: #2E1A5B;
+  color: #fff;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  margin-left: -10px;
+}
+
+canvas.chart {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  height: 100%;
+}
+
+#chartjs-tooltip {
+  font-family: "Avenirnext", "Roboto", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  pointer-events: none;
+  padding: 10px;
+  border-left: 1px solid #fff;
+  white-space: nowrap;
+  width: 175px;
+  -webkit-transition: left .75s ease;
+  transition: left .75s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#chartjs-tooltip .overlay {
+  content: '';
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  mix-blend-mode: color;
+  z-index: 0;
+  -webkit-transition: all .75s ease;
+  transition: all .75s ease;
+}
+#chartjs-tooltip .header, #chartjs-tooltip .point {
+  z-index: 1;
+}
+#chartjs-tooltip .header {
+  position: absolute;
+  left: 0;
+  padding: 0 10px;
+  width: 100%;
+}
+#chartjs-tooltip .message {
+  position: absolute;
+  top: -60px;
+  left: 5%;
+  margin-bottom: 15px;
+  width: 90%;
+  opacity: 0;
+  -webkit-transition: all .75s ease;
+  transition: all .75s ease;
+}
+#chartjs-tooltip .message .content {
+  background-color: rgba(223, 215, 28, 0.9);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #000;
+  padding: .75em 1em;
+  line-height: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#chartjs-tooltip h2 {
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+}
+#chartjs-tooltip .label {
+  color: #999;
+}
+#chartjs-tooltip .point {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding-right: 5%;
+}
+#chartjs-tooltip .point .key {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -6px;
+}
+#chartjs-tooltip .point .value {
+  float: right;
+}
+#chartjs-tooltip .header, #chartjs-tooltip .point {
+  -webkit-transition: all .75s ease;
+  transition: all .75s ease;
+}
+
+.chart-toggle-wrapper {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -465px;
+  background-color: rgba(62, 49, 80, 0.8);
+  border-radius: 10px;
+  z-index: 10;
+  padding: 18px 25px;
+  font-family: "Avenirnext", "Roboto", sans-serif;
+  font-size: 14px;
+}
+.chart-toggle-wrapper .title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+}
+.chart-toggle-wrapper .label {
+  display: inline-block;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
+}
+.chart-toggle-wrapper .switch {
+  display: inline-block;
+  position: relative;
+  background-color: #9891A1;
+  width: 35px;
+  height: 14px;
+  border-radius: 6px;
+  margin: 0 20px;
+  top: 2px;
+  cursor: pointer;
+}
+.chart-toggle-wrapper .switch:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #EFE14A;
+  position: absolute;
+  left: 15px;
+  top: -3px;
+  border-radius: 50%;
+  -webkit-transition: left .5s ease;
+  transition: left .5s ease;
+}
+.chart-toggle-wrapper.off .switch:after {
+  left: 0;
+}
+.chart-toggle-wrapper.off .label.on {
+  color: #999;
+}
+.chart-toggle-wrapper.on .switch:after {
+  left: 15px;
+}
+.chart-toggle-wrapper.on .label.off {
+  color: #999;
+}
+
+/*# sourceMappingURL=style.css.map */
