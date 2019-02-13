@@ -463,18 +463,24 @@ window.onload = function() {
  */
 var cinit = getCookie('carv-init');
 var ref = document.referrer;
+var is_landing = $('.section-6').find('a.text-link-nav-style').length;
 
-if (ref.indexOf('//app.carv.io') != -1 || ref.indexOf('//blog.carv.io') != -1) {
-  cinit = true;
-}
+if (is_landing) {
+  if (ref.indexOf('//app.carv.io') != -1 || ref.indexOf('//blog.carv.io') != -1) {
+    cinit = true;
+  }
 
-if (cinit == null) {
-  $('body').css('overflow', 'hidden').find('.nav-menu-wrap').hide();
+  if (cinit == null) {
+    $('body').css('overflow', 'hidden').find('.nav-menu-wrap').hide();
 
-  $('.section-6').find('a.text-link-nav-style').click(function() {
-    $('body').removeAttr('style').find('.nav-menu-wrap').show();
-    setCookie('carv-init', true, 365);
-  });
+    $('.section-6').find('a.text-link-nav-style').click(function() {
+      $('body').removeAttr('style').find('.nav-menu-wrap').show();
+      setCookie('carv-init', true, 365);
+    });
+  }
+  else {
+    $('body').find('.nav-menu-wrap').show();
+  }
 }
 else {
   $('body').find('.nav-menu-wrap').show();
