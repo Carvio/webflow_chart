@@ -9,7 +9,7 @@
  * Team capacity.
  * Horizontal line indicating team capacity.
  */
-var team_capacity = 40;
+var team_capacity = 115;
 
 /**
  * Max value (the "roof") of the chart.
@@ -31,16 +31,16 @@ var chart_max = 300;
 var data_growth = {
          //> Current month, first visible.
   pm: [ //                      //> Not visible, but affects curve.
-    15, 20, 20, 18, 15, 16, 14, 14, 16, 18, 20, 23
+    2, 20, 24, 17, 10, 15, 20, 20, 25, 18, 20, 23
   ],
   design: [
-    42, 44, 39, 30, 27, 28, 32, 40, 46, 52, 58, 65
+    50, 45, 35, 25, 25, 35, 50, 45, 50, 52, 58, 65
   ],
   engineering: [
-    30, 26, 30, 26, 22, 20, 20, 25, 32, 38, 43, 47
+    40, 50, 45, 30, 25, 20, 35, 50, 55, 38, 43, 47
   ],
   closed: [
-    42, 44, 39, 34, 33, 36, 44, 52, 60, 66, 78, 100
+    0, 5, 6, 8, 10, 20, 25, 40, 50, 66, 78, 100
   ]
 };
 
