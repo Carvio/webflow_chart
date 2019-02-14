@@ -189,16 +189,16 @@ canvas.chart {
   -webkit-transition: left .5s ease;
   transition: left .5s ease;
 }
-.chart-toggle-wrapper.off .switch:after {
+.chart-toggle-wrapper.on .switch:after {
   left: 0;
 }
-.chart-toggle-wrapper.off .label.on {
+.chart-toggle-wrapper.on .label.off {
   color: #999;
 }
-.chart-toggle-wrapper.on .switch:after {
+.chart-toggle-wrapper.off .switch:after {
   left: 15px;
 }
-.chart-toggle-wrapper.on .label.off {
+.chart-toggle-wrapper.off .label.on {
   color: #999;
 }
 
