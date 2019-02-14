@@ -274,11 +274,7 @@ if ($('#chart').length) {
         message = 'Hire Now';
         message = '<div class="content">' + message + '</div>';
       }
-      if (chart_total < team_capacity) {
-        message = 'Offer Earlier State Date';
-        message = '<div class="content">' + message + '</div>';
-      }
-
+  
 
       // Build header contents.
       titleLines.forEach(function(title) {
