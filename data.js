@@ -30,22 +30,7 @@ var chart_max = 300;
  */
 var data_growth = {
          //> Current month, first visible. (After)
-  pm: [ //                      //> Not visible, but affects curve.
-    30, 20, 10, 30, 20, 20, 25, 30, 25, 18, 20, 23
-  ],
-  design: [
-    55, 40, 35, 15, 25, 45, 55, 60, 30, 52, 58, 65
-  ],
-  engineering: [
-    45, 30, 20, 65, 55, 10, 45, 20, 20, 38, 43, 47
-  ],
-  closed: [
-    25, 10, 0, 25, 0, 45, 30, 10, 10, 90, 78, 100
-  ]
-};
-
-var data_maintaining = {
-  pm: [ //                      //> Not visible, but affects curve.
+ pm: [ //                      //> Not visible, but affects curve.
     20, 20, 25, 25, 20, 20, 25, 30, 35, 18, 20, 23
   ],
   design: [
@@ -57,6 +42,21 @@ var data_maintaining = {
   closed: [
     0, 5, 6, 8, 10, 20, 25, 40, 60, 90, 78, 100
   ]
+};
+
+var data_maintaining = {
+pm: [ //                      //> Not visible, but affects curve.
+   30, 20, 10, 30, 20, 20, 25, 30, 25, 18, 20, 23
+ ],
+ design: [
+   55, 40, 35, 25, 25, 45, 55, 60, 30, 52, 58, 65
+ ],
+ engineering: [
+   45, 30, 20, 65, 55, 10, 45, 20, 20, 38, 43, 47
+ ],
+ closed: [
+   25, 10, 0, 45, 0, 45, 30, 10, 10, 90, 78, 100
+ ]
 };
 
 
