@@ -31,7 +31,7 @@ var chart_max = 300;
 var data_growth = {
          //> Current month, first visible.
   pm: [ //                      //> Not visible, but affects curve.
-    2, 20, 24, 17, 10, 15, 20, 20, 25, 18, 20, 23
+    20, 20, 24, 17, 10, 15, 20, 20, 25, 18, 20, 23
   ],
   design: [
     50, 45, 35, 25, 25, 35, 50, 45, 50, 52, 58, 65
