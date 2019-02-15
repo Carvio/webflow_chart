@@ -71,7 +71,7 @@ canvas.chart {
 #chartjs-tooltip .overlay {
   background-image: linear-gradient(to top, black , rgba(0,0,0,0.0));
   content: '';
-  background-color: black;
+
   position: absolute;
   left: 0;
   right: 0;
