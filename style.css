@@ -101,6 +101,7 @@ canvas.chart {
   transition: all .75s ease;
 }
 #chartjs-tooltip .message .content {
+  display: none;
   background-color: rgba(223, 215, 28, 0.9);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
