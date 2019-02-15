@@ -138,7 +138,8 @@ if ($('#chart').length) {
     ];
 
     for (var i = 0; i < length; i++) {
-      ret[i] = months[start] + ', ' + date.getFullYear();
+      // ret[i] = months[start] + ', ' + date.getFullYear();
+      ret[i] = months[start];
       start++;
 
       if (start == 12) {
