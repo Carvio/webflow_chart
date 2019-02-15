@@ -269,8 +269,8 @@ if ($('#chart').length) {
         el_marker.style.top = pos_y + 'px';
       });
 
-      // Set messages depending on chart values.
-      if (chart_total > team_capacity) {
+      // Set messages depending on chart values (Chris L changed "chart_total > team_capacity"  .
+      if (chart_total = team_capacity) {
         message = 'Hire Now';
         message = '<div class="content">' + message + '</div>';
       }
