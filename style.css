@@ -61,7 +61,7 @@ canvas.chart {
   padding: 10px;
   border-left: 1px solid #fff;
   white-space: nowrap;
-  width: 175px;
+  width: 200px;
   -webkit-transition: left .75s ease;
   transition: left .75s ease;
   display: flex;
@@ -69,6 +69,7 @@ canvas.chart {
   justify-content: center;
 }
 #chartjs-tooltip .overlay {
+  background-image: linear-gradient(to top, black , rgba(0,0,0,0.0));
   content: '';
   background-color: black;
   position: absolute;
