@@ -139,6 +139,7 @@ canvas.chart {
 }
 #chartjs-tooltip .point .value {
   float: right;
+  display:none;
 }
 #chartjs-tooltip .header, #chartjs-tooltip .point {
   -webkit-transition: all .75s ease;
