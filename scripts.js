@@ -270,16 +270,16 @@ if ($('#chart').length) {
       });
 
       // Set messages depending on chart values (Chris L changed "chart_total > team_capacity"  .
-      if (chart_total = team_capacity) {
-        message = 'Hire Now';
-        message = '<div class="content">' + message + '</div>';
+   //   if (chart_total > team_capacity) {
+     //   message = 'Hire Now';
+       // message = '<div class="content">' + message + '</div>';
       }
   
 
       // Build header contents.
       titleLines.forEach(function(title) {
         el_header_data += '<div class="message"></div>';
-        el_header_data += '<h2>Projected Growth</h2>';
+        el_header_data += '<h2>Forecasted Capacity</h2>';
         el_header_data += '<div class="label">' + title + '</div>';
       });
 
