@@ -42,8 +42,6 @@ canvas {
   overflow: hidden;
   position: relative;
   margin-left: -10px;
-  margin-top:50px;
-  margin-bottom:50px;
 }
 
 canvas.chart {
