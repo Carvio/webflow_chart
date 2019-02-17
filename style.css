@@ -48,7 +48,7 @@ canvas.chart {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  height: 100%;
+  height: 90%;
 }
 
 #chartjs-tooltip {
