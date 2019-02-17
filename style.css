@@ -38,10 +38,12 @@ canvas {
 .chart-wrapper {
   background-color: #2E1A5B;
   color: #fff;
-  height: calc(100% - 50px);
+  height: 100%;
   overflow: hidden;
   position: relative;
   margin-left: -10px;
+  margin-top:50px;
+  margin-bottom:50px;
 }
 
 canvas.chart {
