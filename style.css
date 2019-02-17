@@ -38,7 +38,7 @@ canvas {
 .chart-wrapper {
   background-color: #2E1A5B;
   color: #fff;
- 
+  height: 100%;
   overflow: hidden;
   position: relative;
   margin-left: -10px;
