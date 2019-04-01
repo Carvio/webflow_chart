@@ -151,6 +151,12 @@
     return results;
   };
 
+  //Resize and Horizontal Scrollbar Fix.
+  sketch.resize = function() {
+    sketch.width = $('body').width();
+    sketch.element.width = sketch.width;
+  };
+
   // Mousemove Fix.
   // Set max-height for mouse movement.
   var maxHeight = $('canvas.sketch').height();
