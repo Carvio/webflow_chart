@@ -402,8 +402,8 @@ if ($('#chart').length) {
         mode: 'horizontal',
         scaleID: 'y-axis-0',
         value: team_capacity,
-        borderColor: colors.white,
-        borderWidth: 1,
+        borderColor: colors.yellow,
+        borderWidth: 3,
         label: {
           enabled: true,
           content: 'Team Capacity',
